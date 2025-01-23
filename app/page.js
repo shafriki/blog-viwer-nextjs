@@ -13,7 +13,7 @@ export default async function Home() {
         {posts.slice(0, 10).map((post) => (
           <li key={post.id} className='bg-gradient-to-r from-[#1B1B1D] via-[#272730] to-[#6E2B4E] mb-3 text-xl p-3 max-w-screen-sm mx-auto'>
             <Link href={`/blog/${post.id}`} className="text-white hover:text-amber-100">
-              Title: {post.title}
+              Click Title To See More: {post.title}
             </Link>
           </li>
         ))}
