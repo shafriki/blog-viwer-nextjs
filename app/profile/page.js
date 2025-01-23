@@ -12,10 +12,6 @@ export default async function ProfilePage() {
 
   return (
     <div className="max-w-4xl mx-auto p-8">
-      <h1 className="text-2xl font-bold mb-4">
-        Welcome to your profile, {user.given_name || user.email}!
-      </h1>
-      
       <div className="bg-gradient-to-r from-[#1B1B1D] via-[#272730] to-[#6E2B4E] text-white shadow rounded-lg p-6">
         <div className="space-y-4">
           <div className="flex flex-col items-center">
