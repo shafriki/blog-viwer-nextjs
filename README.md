@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Viewer Application
 
-## Getting Started
+A simple blog viewer application built with **Next.js** to demonstrate routing, server and client components, dynamic routes, authentication, and data fetching. This application allows users to view blog posts and navigate through detailed pages. Additionally, it includes a protected profile page secured using **Kinde Auth**.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Home Page**:
+   - Displays a list of blog post titles fetched from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/posts).
+   - Each blog title links to its respective detailed page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Blog Details Page**:
+   - Dynamically generated page using the `/blog/[id]` route.
+   - Fetches and displays blog details based on the `id` in the URL.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Protected Profile Page**:
+   - A static route (`/profile`) that displays a personalized welcome message.
+   - Secured using **Kinde Auth**. Redirects unauthenticated users to the login page.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Authentication**:
+   - **Login**: Redirects users to the Kinde Auth login page.
+   - **Logout**: Logs users out of the application.
+   - Dynamic button rendering based on authentication status.
 
-## Learn More
+5. **Navigation**:
+   - A responsive header with links to "Home" and "Profile."
+   - Login/Logout button displayed dynamically.
 
-To learn more about Next.js, take a look at the following resources:
+6. **Styling**:
+   - Clean and responsive design using **Tailwind CSS**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
