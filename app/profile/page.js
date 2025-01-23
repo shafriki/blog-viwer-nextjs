@@ -12,7 +12,7 @@ export default async function ProfilePage() {
 
   return (
     <div className="max-w-4xl mx-auto p-8">
-      <div className="bg-gradient-to-r from-[#1B1B1D] via-[#272730] to-[#6E2B4E] text-white shadow rounded-lg p-6">
+      <div className="bg-gradient-to-r my-56 from-[#1B1B1D] via-[#272730] to-[#6E2B4E] text-white shadow rounded-lg p-6">
         <div className="space-y-4">
           <div className="flex flex-col items-center">
             <h1 className="text-3xl my-2">Hi,{user.given_name} {user.family_name} Welcome To Your Profile</h1>
