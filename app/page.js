@@ -11,9 +11,9 @@ export default async function Home() {
       <h1 className="text-4xl font-bold mb-4 text-center">Blog Viewer</h1>
       <ul>
         {posts.slice(0, 10).map((post) => (
-          <li key={post.id} className='bg-teal-400 mb-3 text-xl p-3 max-w-screen-sm mx-auto'>
+          <li key={post.id} className='bg-gradient-to-r from-[#1B1B1D] via-[#272730] to-[#6E2B4E] mb-3 text-xl p-3 max-w-screen-sm mx-auto'>
             <Link href={`/blog/${post.id}`} className="text-white hover:text-amber-100">
-              {post.title}
+              Title: {post.title}
             </Link>
           </li>
         ))}

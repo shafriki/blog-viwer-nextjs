@@ -16,12 +16,13 @@ export default async function ProfilePage() {
         Welcome to your profile, {user.given_name || user.email}!
       </h1>
       
-      <div className="bg-white shadow rounded-lg p-6">
+      <div className="bg-gradient-to-r from-[#1B1B1D] via-[#272730] to-[#6E2B4E] text-white shadow rounded-lg p-6">
         <div className="space-y-4">
-          <div>
-            <h2 className="text-lg text-gray-600 font-semibold">Profile Information</h2>
-            <p className="text-gray-600">Email: {user.email}</p>
-            <p className="text-gray-600">
+          <div className="flex flex-col items-center">
+            <h1 className="text-3xl my-2">Hi,{user.given_name} {user.family_name} Welcome To Your Profile</h1>
+            <h2 className="text-lg text-white font-semibold">Profile Information</h2>
+            <p className="text-white">Email: {user.email}</p>
+            <p className="text-white">
               Name: {user.given_name} {user.family_name}
             </p>
           </div>
