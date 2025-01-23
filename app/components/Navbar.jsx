@@ -77,7 +77,7 @@ const Navbar = async () => {
                 </button>
               </LoginLink>
               <RegisterLink postLoginRedirectURL="/">
-                <button className="btn bg-blue-500 px-6 border-none text-white py-1 rounded-md items-center">
+                <button className="btn bg-teal-500 px-6 border-none text-white py-1 rounded-md items-center">
                   Sign Up
                 </button>
               </RegisterLink>
