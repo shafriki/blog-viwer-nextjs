@@ -50,12 +50,12 @@ const Navbar = async () => {
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link href="/">
-                <h1 className="font-medium">HOME</h1>
+                <h1 className="font-medium hover:text-green-500">HOME</h1>
               </Link>
             </li>
             <li>
               <Link href="/profile">
-                <h1 className="font-medium">PROFILE</h1>
+                <h1 className="font-medium hover:text-green-500">PROFILE</h1>
               </Link>
             </li>
           </ul>
